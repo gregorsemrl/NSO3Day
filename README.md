@@ -1,6 +1,6 @@
 # NSO 3 Day Custom Course
 
-Hello! This repository contains initial environment setup for the 3 day NSO custom training.
+Hello and welcome! This repository contains initial environment setup for the 3 day NSO custom training.
 
 It includes the running instance of NSO with the pre-populated database and NEDs required to spin up the NSO public sandbox environment ready for the custom course.
 
