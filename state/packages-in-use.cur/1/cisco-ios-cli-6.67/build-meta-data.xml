@@ -1,0 +1,24 @@
+<ncs-pkg-build xmlns='http://tail-f.com/ns/ncs-pkg-build'>
+    <date>2020-12-07 07:22:30</date>
+    <file>ncs-5.4.1-cisco-ios-6.67.9.tar.gz</file>
+    <type>release</type>
+    <arch>linux.x86_64</arch>
+    <java>compiled Java class data, version 52.0 (Java 1.8)</java>
+    <python></python>
+    <erlang>22.3.2</erlang>
+    <package>
+        <name>cisco-ios-cli-6.67</name>
+        <version>6.67.9</version>
+        <ref>6.67.9</ref>
+        <sha1>b5809dcbe</sha1>
+    </package>
+    <ncs>
+        <version>5.4.1</version>
+        <sha1></sha1>
+    </ncs>
+    <dev-support>
+        <version>1.0</version>
+        <branch>7f9f8dd</branch>
+        <sha1>7f9f8dd</sha1>
+    </dev-support>
+</ncs-pkg-build>

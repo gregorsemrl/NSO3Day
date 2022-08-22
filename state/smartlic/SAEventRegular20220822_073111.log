@@ -1,0 +1,31 @@
+2022-08-22 07:31:11.823 PDT SAEVT_INIT_START version="3.0.13" 
+2022-08-22 07:31:13.508 PDT SAEVT_INIT_COMPLETE
+2022-08-22 07:31:16.186 PDT SAEVT_ENABLED
+2022-08-22 07:31:16.188 PDT SAEVT_READY
+2022-08-22 07:31:16.245 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.NSO-platform-production,1.0_d1445dab-9d96-4593-99f2-6f633b8a759c" count="1" type="total" 
+2022-08-22 07:31:16.246 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.NSO-platform-production,1.0_d1445dab-9d96-4593-99f2-6f633b8a759c" count="1" 
+2022-08-22 07:31:16.246 PDT SAEVT_STATE_EVAL
+2022-08-22 07:39:41.802 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.NSO-platform-production,1.0_d1445dab-9d96-4593-99f2-6f633b8a759c" count="1" type="total" 
+2022-08-22 07:39:41.803 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.NSO-platform-production,1.0_d1445dab-9d96-4593-99f2-6f633b8a759c" count="1" 
+2022-08-22 07:39:41.803 PDT SAEVT_STATE_EVAL
+2022-08-22 07:39:43.457 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.cisco-ios-NED,1.0_d9eca34d-1f6a-4595-ad74-9c0c57e03c27" count="1" type="total" 
+2022-08-22 07:39:43.457 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.cisco-ios-NED,1.0_d9eca34d-1f6a-4595-ad74-9c0c57e03c27" count="1" 
+2022-08-22 07:39:43.457 PDT SAEVT_STATE_EVAL
+2022-08-22 07:49:59.497 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.NSO-platform-production,1.0_d1445dab-9d96-4593-99f2-6f633b8a759c" count="1" type="total" 
+2022-08-22 07:49:59.497 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.NSO-platform-production,1.0_d1445dab-9d96-4593-99f2-6f633b8a759c" count="1" 
+2022-08-22 07:49:59.497 PDT SAEVT_STATE_EVAL
+2022-08-22 07:50:00.829 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.NSO-network-element,1.0_5d641fa0-757d-43b0-a926-166cb6e3cfdd" count="1" type="total" 
+2022-08-22 07:50:00.829 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.NSO-network-element,1.0_5d641fa0-757d-43b0-a926-166cb6e3cfdd" count="1" 
+2022-08-22 07:50:00.829 PDT SAEVT_STATE_EVAL
+2022-08-22 07:50:02.171 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.cisco-ios-NED,1.0_d9eca34d-1f6a-4595-ad74-9c0c57e03c27" count="1" type="total" 
+2022-08-22 07:50:02.171 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.cisco-ios-NED,1.0_d9eca34d-1f6a-4595-ad74-9c0c57e03c27" count="1" 
+2022-08-22 07:50:02.171 PDT SAEVT_STATE_EVAL
+2022-08-22 07:54:58.132 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.NSO-platform-production,1.0_d1445dab-9d96-4593-99f2-6f633b8a759c" count="1" type="total" 
+2022-08-22 07:54:58.132 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.NSO-platform-production,1.0_d1445dab-9d96-4593-99f2-6f633b8a759c" count="1" 
+2022-08-22 07:54:58.132 PDT SAEVT_STATE_EVAL
+2022-08-22 07:54:59.466 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.NSO-network-element,1.0_5d641fa0-757d-43b0-a926-166cb6e3cfdd" count="2" type="total" 
+2022-08-22 07:54:59.466 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.NSO-network-element,1.0_5d641fa0-757d-43b0-a926-166cb6e3cfdd" count="2" 
+2022-08-22 07:54:59.466 PDT SAEVT_STATE_EVAL
+2022-08-22 07:55:00.812 PDT SAEVT_LICENSE_USAGE entitlementTag="regid.2015-10.com.cisco.cisco-ios-NED,1.0_d9eca34d-1f6a-4595-ad74-9c0c57e03c27" count="1" type="total" 
+2022-08-22 07:55:00.812 PDT SAEVT_TAG_EVAL entitlementTag="regid.2015-10.com.cisco.cisco-ios-NED,1.0_d9eca34d-1f6a-4595-ad74-9c0c57e03c27" count="1" 
+2022-08-22 07:55:00.812 PDT SAEVT_STATE_EVAL
