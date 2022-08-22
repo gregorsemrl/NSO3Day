@@ -1,4 +1,7 @@
-# NSO 3 Day Custom Course
+# NIL 3-Day Virtual NSO Training Course!
+
+![image](https://user-images.githubusercontent.com/42440315/185983097-9bd99f35-64d1-4b2b-85f4-53526dc215c7.png)
+
 
 Hello and welcome! This repository contains initial environment setup for the 3 day NSO custom training.
 
