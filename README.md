@@ -24,6 +24,6 @@ To set up the environment properly, please follow the following steps:
 
 * **Discovery 1**: [Use Cisco NSO for the First Time](https://github.com/gregorsemrl/NSO3Day/blob/master/docs/NSO%203%20Day%20Custom%20Course%20-%20Discovery%201.pdf)
 * **Discovery 2**: [Manage Device Inventory](https://github.com/gregorsemrl/NSO3Day/blob/master/docs/NSO%203%20Day%20Custom%20Course%20-%20Discovery%202.pdf)
-* Discovery 3
-* Discovery 4
-* Discovery 5
+* **Discovery 3**: [Configure and Troubleshoot Devices](https://github.com/gregorsemrl/NSO3Day/blob/master/docs/NSO%203%20Day%20Custom%20Course%20-%20Discovery%203.pdf)
+* **Discovery 4**: [Create a Service Package](https://github.com/gregorsemrl/NSO3Day/blob/master/docs/NSO%203%20Day%20Custom%20Course%20-%20Discovery%204.pdf)
+* Discovery 5: Use Cisco NSO RESTCONF API with Postman
