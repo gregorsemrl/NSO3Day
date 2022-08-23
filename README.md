@@ -19,3 +19,8 @@ To set up the environment properly, please follow the following steps:
 5. After the repository is successfully cloned, go to the nso-run folder: **cd nso-run** ![image](https://user-images.githubusercontent.com/42440315/185971764-3647caf4-d4ba-4b7d-ad9d-c08d84baf9b1.png)
 6. Unzip the file ncs-cdb.zip: **unzip ncs-cdb.zip** ![image](https://user-images.githubusercontent.com/42440315/185971977-ac249e9b-97c9-4033-b626-e1680b5d5538.png)
 7. Your environment in now ready to start the Discovery 1.
+
+## Links to Discovery Guide
+
+* **Discovery 1**: [Use Cisco NSO for the First Time](https://github.com/gregorsemrl/NSO3Day/blob/master/docs/NSO%203%20Day%20Custom%20Course%20-%20Discovery%201.pdf)
+* **Discovery 2**: [Manage Device Inventory](https://github.com/gregorsemrl/NSO3Day/blob/master/docs/NSO%203%20Day%20Custom%20Course%20-%20Discovery%202.pdf)
