@@ -1,0 +1,34 @@
+<config-template xmlns="http://tail-f.com/ns/config/1.0" servicepoint="dns-snmp-service">
+  <devices xmlns="http://tail-f.com/ns/ncs">
+    <device>
+      <name>{/devices}</name>
+      <config>
+        <ip xmlns="urn:ios">
+          <name-server>
+            <name-server-list>
+              <address>{/dns-server}</address>
+            </name-server-list>
+          </name-server>
+        </ip>
+        <access-list xmlns="urn:ios">
+          <access-list tags="replace">
+            <id>{/acl-number}</id>
+            <rule>
+              <rule>remark SNMP ACCESS</rule>
+            </rule>
+            <rule>
+              <rule>permit {/snmp-server}</rule>
+            </rule>
+          </access-list>
+        </access-list>
+        <snmp-server xmlns="urn:ios">
+          <community>
+            <name>{/community-string}</name>
+            <RO/>
+            <access-list-name>{/acl-number}</access-list-name>
+          </community>
+        </snmp-server>
+      </config>
+    </device>
+  </devices>
+</config-template>

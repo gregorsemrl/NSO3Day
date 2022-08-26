@@ -1,0 +1,71 @@
+module dns-snmp-py {
+namespace "http://www.cisco.com/examples/dnssnmpservice_python";
+  prefix dns-snmp-py;
+
+  import ietf-inet-types {
+    prefix inet;
+  }
+  import tailf-ncs {
+    prefix ncs;
+  }
+
+  // add support for NSO syntax help
+  import tailf-common {
+    prefix tailf;
+  }
+
+  organization "CISCO SYSTEMS";
+  contact "CISCO SYSTEMS; support@cisco.com";
+  description "The module to showcase NSO capabilities.";
+  revision 2022-06-22 {
+    description "version 1.0.0.0, see README file.";
+  }
+
+  list dns-snmp-py {
+    key name;
+
+    uses ncs:service-data;
+    ncs:servicepoint "dns-snmp-py";
+
+    leaf name {
+      type string;
+    }
+
+    leaf-list devices {
+      tailf:info "Devices for this service configuration";
+      type leafref {
+        path "/ncs:devices/ncs:device/ncs:name";
+      }
+    }
+
+    leaf dns-server {
+      tailf:info "DNS server";
+      type inet:ipv4-address;
+      mandatory true;
+    }
+
+    leaf snmp-server {
+      tailf:info "SNMP server";
+      type inet:ipv4-address;
+      mandatory true;
+    }
+
+    leaf acl-number {
+      tailf:info "IP Standard Access List";
+      type uint16
+      {
+         range "1..99";
+      }
+      default 55;
+    }
+
+    leaf community-string {
+      tailf:info "SNMP Community String";
+      type string
+      {
+         length "6..32";
+      }
+      default "c0mmun1t7";
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<ncs-package xmlns="http://tail-f.com/ns/ncs-packages">
+  <name>dns-snmp-service</name>
+  <package-version>1.0.0.0</package-version>
+  <description>This is a DNS SNMP configuration service.</description>
+  <ncs-min-version>5.7</ncs-min-version>
+</ncs-package>
