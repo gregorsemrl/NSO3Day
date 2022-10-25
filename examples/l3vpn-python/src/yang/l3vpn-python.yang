@@ -1,0 +1,116 @@
+module l3vpn-python {
+  namespace "http://www.cisco.com/example/l3vpn-python";
+  prefix l3vpn-python;
+
+  import ietf-inet-types {
+    prefix inet;
+  }
+  import tailf-common {
+    prefix tailf;
+  }
+  import tailf-ncs {
+    prefix ncs;
+  }
+
+  organization "CISCO SYSTEMS";
+  contact "CISCO SYSTEMS; support@cisco.com";
+  description "The module to showcase NSO capabilities.";
+  revision 2022-10-01 {
+    description
+      "Initial revision of L3vpn Python service.";
+  }
+
+  augment /ncs:services {
+    list l3vpn-python {
+      tailf:info "L3VPN Service - Python based"; 
+
+      key vpn-name;
+      leaf vpn-name {
+        tailf:info "Service Instance Name"; 
+        tailf:cli-allow-range;
+        type string;
+      }
+
+      uses ncs:service-data;
+      ncs:servicepoint l3vpn-python-servicepoint;
+
+      leaf vpn-id { 
+        tailf:info "Service Instance ID"; 
+        type uint32 { 
+          range "10001..19999"; 
+        } 
+      }
+
+      leaf customer { 
+        tailf:info "VPN Customer"; 
+        type leafref { 
+          path "/ncs:customers/ncs:customer/ncs:id"; 
+        } 
+      }
+
+      // Each VPN service instance can have one or more interfaces
+      list link { 
+        tailf:info "PE-CE Attachment Point"; 
+        key link-id; 
+        unique "pe-device interface";
+
+        leaf link-id { 
+           tailf:info "Link ID"; 
+           type uint32 { 
+              range "1..255"; 
+           } 
+        } 
+
+        leaf link-name { 
+           tailf:info "Link Name"; 
+           type string; 
+        }
+        
+        leaf pe-device { 
+          tailf:info "PE Router"; 
+          type leafref { 
+            path "/ncs:devices/ncs:device/ncs:name"; 
+          } 
+          must "starts-with(current(),'R')" { 
+            error-message "Only R devices can be selected."; 
+          } 
+        } 
+
+        leaf interface { 
+          tailf:info "Customer Facing Interface"; 
+          type string;  
+        }
+
+        leaf routing-protocol {
+          tailf:info "Routing option on PE-CE link"; 
+          type enumeration { 
+            enum bgp; 
+            enum static; 
+          }  
+        } 
+
+        list static-route  { 
+          tailf:info "Static Route"; 
+          key prefix; 
+          when "../routing-protocol='static'"; 
+
+          leaf prefix { 
+            tailf:info "Static Route Prefix"; 
+            type inet:ipv4-address; 
+          } 
+
+          leaf mask { 
+            tailf:info "Subnet Mask for IOS and Prefix for IOSXR"; 
+            type union {  
+                type inet:ipv4-address; 
+                type inet:ipv4-prefix; 
+            }
+          } 
+        } 
+
+      }
+
+    }
+  }
+
+}
